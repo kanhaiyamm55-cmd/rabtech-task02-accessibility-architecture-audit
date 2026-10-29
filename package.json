@@ -1,0 +1,13 @@
+{
+  "name": "rabtech-task02-accessibility-architecture-audit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Accessibility audit worksheet and full-stack monorepo starter",
+  "scripts": {
+    "start": "npm --prefix server start",
+    "test": "npm --prefix server test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

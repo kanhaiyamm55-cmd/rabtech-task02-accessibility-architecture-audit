@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Accessible feedback form demo for a full-stack architecture starter.">
+  <title>Service Feedback | Audit Starter</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Full-stack starter</p>
+      <h1>Service feedback</h1>
+      <p>A small, keyboard-friendly example feature.</p>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <section aria-labelledby="feedback-heading" class="panel">
+      <h2 id="feedback-heading">Share feedback</h2>
+      <p>Use this demo to test a basic client-to-server vertical slice.</p>
+      <form id="feedback-form">
+        <label for="message">Your feedback <span aria-hidden="true">(required)</span></label>
+        <textarea id="message" name="message" rows="5" maxlength="500" required aria-describedby="message-help"></textarea>
+        <p id="message-help" class="help">Maximum 500 characters. Do not include sensitive information.</p>
+        <button type="submit">Send feedback</button>
+      </form>
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <footer class="container"><p>Demo only — submissions are not stored.</p></footer>
+</body>
+</html>
